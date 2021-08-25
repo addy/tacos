@@ -19,9 +19,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            cd ~/projects/tacos.guru
-            yarn build
-            rm -rf /var/www/tacos.guru/*
-            cp -r dist/* /var/www/tacos.guru/
-            service nginx restart
+            whoami
           script_stop: true
