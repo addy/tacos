@@ -9,7 +9,9 @@ A questionable taco review site for the KC Taco Guru team
 
 ### Installing Dependencies
 
-1. `yarn install`
+1. `yarn set version berry`
+2. `yarn set version latest`
+3. `yarn install`
 
 ### Running Webpack dev server
 
