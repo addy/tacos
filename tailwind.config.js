@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js'],
+  purge: ['./src/**/*.html', './src/**/*.jsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
