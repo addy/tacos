@@ -21,3 +21,4 @@ jobs:
           script: |
             whoami
           script_stop: true
+          debug: true
