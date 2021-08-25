@@ -18,5 +18,10 @@ jobs:
           port: ${{ secrets.PORT }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          script: cd ~/projects/tacos.guru && yarn build && rm -rf /var/www/tacos.guru/* && cp -r dist/* /var/www/tacos.guru/ && service nginx restart
+          script: |
+            cd ~/projects/tacos.guru
+            yarn build
+            rm -rf /var/www/tacos.guru/*
+            cp -r dist/* /var/www/tacos.guru/
+            service nginx restart
           script_stop: true
