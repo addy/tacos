@@ -20,6 +20,7 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd ~/projects/tacos
+            git pull origin main
             yarn build
             rm -rf /var/www/tacos.guru/*
             cp -r dist/* /var/www/tacos.guru/
